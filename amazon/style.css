@@ -1,3 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+   font-size: 20px;
+}
+
+
+
+
 nav{
     display:flex;
     justify-content: space-between;
@@ -6,32 +15,112 @@ nav{
     background-color: #232F3E;
 
 }
+nav #logo {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    margin-top: 5px;
+}
 
 #search-box {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: 
+    background-color: white;
+    border-radius: 10px;
     
     padding: 5px;
-    position: relative;
+    
      width: 300px;
     height : 30px;
+    
    
+}
+nav #location {
+    font-size: ;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 17px;
 }
 
 nav #search-box input {
     width: 270px;
     height: 30px;
     border-radius: 10px 0px 0px 10px;
+    position: relative;
+    border: 1px solid white;
 }
 nav #search-box i {
+    font-size: 40p;
     display: flex;
     align-items: center;
     justify-content: center ;
+    border-radius: 8px;
 
-    border: 1px solid #ccc;
-    height: 31px;
-    width: 30px;
+    border: 1px solid orange;
+    height: 100%;
+    width: 100%;
     background-color: orange;
 }
+
+nav #language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 17px;
+}
+nav #language i {
+    margin-top: 7px;
+}
+
+nav #accounts-details{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    color: white;
+    font-size: 17px;
+}
+nav #accounts-details #accounts {
+    font-weight: bold;
+}
+nav #cart {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 17px;
+}
+menu {
+    background-color: #37475A;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+    margin-top: 5px;
+}
+menu li {
+    margin: 0 15px;
+}
+menu a {
+    color: white;
+    text-decoration: none;
+    
+}
+menu a:hover {
+    text-decoration: underline;
+}   
