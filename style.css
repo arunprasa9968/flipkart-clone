@@ -1,5 +1,7 @@
-body{
-    
+*{
+    margin: 0;
+    padding: 0;
+   font-size: 20px;
 }
 
 
@@ -24,12 +26,14 @@ nav #logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: 
+    background-color: white;
+    border-radius: 10px;
     
     padding: 5px;
-    position: relative;
+    
      width: 300px;
     height : 30px;
+    
    
 }
 nav #location {
@@ -45,17 +49,19 @@ nav #search-box input {
     width: 270px;
     height: 30px;
     border-radius: 10px 0px 0px 10px;
-    /
+    position: relative;
+    border: 1px solid white;
 }
 nav #search-box i {
-    margin-top: 1px;
+    font-size: 40p;
     display: flex;
     align-items: center;
     justify-content: center ;
+    border-radius: 8px;
 
     border: 1px solid orange;
-    height: 31px;
-    width: 30px;
+    height: 100%;
+    width: 100%;
     background-color: orange;
 }
 
@@ -78,6 +84,9 @@ nav #accounts-details{
     color: white;
     font-size: 17px;
 }
+nav #accounts-details #accounts {
+    font-weight: bold;
+}
 nav #cart {
     display: flex;
     gap: 5px;
@@ -86,34 +95,32 @@ nav #cart {
     color: white;
     font-size: 17px;
 }
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        align-items: stretch;
-        padding: 10px 5px;
-    }
-    nav #logo {
-        justify-content: flex-start;
-        margin-bottom: 10px;
-    }
-    #search-box {
-        width: 100%;
-        min-width: 0;
-        margin-bottom: 10px;
-    }
-    nav #search-box input {
-        width: 70%;
-        min-width: 0;
-    }
-    nav #location,
-    nav #language,
-    nav #accounts-details,
-    nav #cart {
-        font-size: 15px;
-        justify-content: flex-start;
-        margin-bottom: 5px;
-    }
-    nav #accounts-details {
-        align-items: flex-start;
-    }
+menu {
+    background-color: #37475A;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    margin-top: 10px;
+    
 }
+menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+    margin-top: 5px;
+}
+menu li {
+    margin: 0 15px;
+}
+menu a {
+    color: white;
+    text-decoration: none;
+    
+}
+menu a:hover {
+    text-decoration: underline;
+}   
